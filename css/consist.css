@@ -1,0 +1,29 @@
+.consist{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 24px;
+}
+.consist__item{
+	background-color: #248FFB;
+	color: #fff;
+	border-radius: 24px;
+	padding: 40px;
+	min-height: 300px;
+}
+.contist__title{
+
+	font-size: 18px;
+	line-height: 130%;
+	margin-bottom: 16 px;
+}
+.consist__desc{
+	margin-bottom: 16px;
+}
+.area{
+	margin-bottom: 80px;
+}
+.area__title{
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 48px;
+}

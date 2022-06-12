@@ -1,0 +1,18 @@
+.btn{
+	padding: 20px 32px;
+	background: #F9B943;
+	box-shadow: 0px 8px 15px rgba(253, 205, 59, 0.2);
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 600;
+	display: inline-block;
+}
+.btn.btn_small{
+	padding: 12px 20px;
+	background: #F9B943;
+	box-shadow: 0px 8px 15px rgba(253, 205, 59, 0.2);
+	color: #fff;
+	font-weight: 600;
+	display: inline-block;
+	border-radius: 15px
+}

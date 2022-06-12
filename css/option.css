@@ -1,0 +1,42 @@
+.option{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 24px;	
+	margin-bottom: 80px;
+}
+.option__title{
+	font-size: 24px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+.option__items{
+	background-color: #000;
+	color: #fff;
+	border-radius: 24px;
+	line-height: 130%;
+	position: relative;
+	overflow: hidden;
+}
+.option__content{
+	padding: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+	
+}
+.option__img{
+	display:block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+.give__title{
+	min-width: 400px;
+	margin-bottom: 48px;
+}

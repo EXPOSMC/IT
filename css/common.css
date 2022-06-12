@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.wrapper{
+	width: 90%;
+	max-width: 1360px;
+	margin: 0 auto;
+}
+.h2{
+	font-weight: 700;
+	font-size: 28px;
+}
+.h3{
+	font-size: 24px;
+	line-height: 130%;
+}
