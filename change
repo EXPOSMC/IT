@@ -1,0 +1,29 @@
+
+<section class = "change wrapper"> 
+    <div class = "change__header">
+    <h2 class = "h2">Ближайшие смены</h2>
+    <a href ="#" class = "link">Смотреть все</a>
+	</div>
+    <div class = "shift">
+                <article class="shift__item">
+                    <div class = shift__content>
+                       
+                        <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                        <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                        <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>					
+                    </article>
+                    <article class="shift__item">
+                        <div class = shift__content>
+                            <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                            <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                            <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>				
+                        </article>
+                        <article class="shift__item">
+                            <div class = shift__content>
+                                <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                                <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                                <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>				
+                            </article>
+                            <!-- <a data-fancybox data-type="iframe" href="iframe1.html"data-preload="false"class="btn btn_small">Записаться</a>	 -->
+    </section>
+    
