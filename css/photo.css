@@ -59,3 +59,47 @@
 .slider-works__btn_prev::after{
 	margin-right: 2px;
 }
+
+@media screen and (max-width:1024px){
+	.slider-works__btn {	
+	background: #fff0;
+	height: 0px;
+	}
+
+.slider-works__btn::after{
+	font-size: 30px;
+}
+.photo{
+	border-radius: 12px;
+}
+.photo__date{
+	font-size: 14px;
+}
+.photo__title{
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+.h2{
+	font-size:20px;
+}
+.link{
+	font-size:12px;
+}
+}
+
+@media screen and (max-width:768px){
+	.photo__date{
+		font-size: 10px;
+	}
+	.photo__title{
+		font-size: 14px;
+		margin-bottom: 2px;
+	}
+	.h2{
+		font-size:20px;
+	}
+	.slider-works__btn::after{
+		font-size: 20px;
+		color:#fff0;
+	}
+}

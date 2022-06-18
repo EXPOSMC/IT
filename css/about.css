@@ -3,11 +3,13 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 24px;
+	margin-bottom: 80px;
 }
 .about__img{
-	
-	width: 757px;
-	height: 672px;
+	position: relative;
+	height: 100%;
+	object-fit: cover;
+	min-height: 400px;
 	object-fit: cover;
 	margin-bottom: 80px;
 }
@@ -32,4 +34,26 @@
 	font-size: 18px;
 	max-width: 520px;
 	margin-bottom: 12px;
+}
+@media screen and (max-width:1024px){
+.about	{
+		padding: 80px 40px;
+	}
+}
+@media screen and (max-width:768px){
+.about	{
+		padding: 40px 24px;
+	}
+/*.about__title{
+	font-size: 22px;
+}
+.about__desc{
+	font-size: 16px;
+}
+.about__subtitle{
+font-size: 12px;
+}
+.link_big{
+	font-size: 12px;	
+}*/
 }

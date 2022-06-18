@@ -26,4 +26,20 @@
 	font-weight: 700;
 	color: #000000;
 	margin-bottom: 48px;
+}	
+.robo__back{
+		background: #fff;
+		border-radius: 50%;
+		width: 216px;
+		height: 216px;
+	}
+@media screen and (max-width:768px){
+	.consist	{
+		grid-template-columns: repeat(1, 1fr);
+		}
+	
+	.consist__desc{
+		font-size: 14px;
+	}	
+
 }

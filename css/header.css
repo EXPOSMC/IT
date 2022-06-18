@@ -1,22 +1,150 @@
 .header{
-	padding-top:32px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+		.header:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color:#248FFB;
+		z-index: 2;
+}
+.header__body{
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+	height: 80px;
 	align-items: center;
+}
+.container{
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0px 10px;
 }
 .header__nav{
 	margin-left: auto;
 }
 .header__nav-list{
 	display: flex;
+	position: relative;
+	z-index: 2;
 }
 .header__nav-item{
 	margin-right: 24px;
 }
 .header__nav-item a{
 	font-weight: 600;
+	position: relative;
 	font-size: 18px;
+	color:#fff;
+	white-space: nowrap;
+	transition: color #ff7300 0.3s, transform 0.3s;
+	z-index: 3;
+}
+.header__nav-item :hover{
+	color: #ff7300;
+	cursor: pointer;
+	transform: scale(1.02);
+	transition: color 0.175s;
 }
 .header__logo-list{
 	margin-right: 5px;
+}	
+.header__logo{
+	position: relative;
+	overflow: hidden;
+	z-index: 3;
+	}
+
+@media screen and (max-width:768px){
+		body.lock{
+		overflow: hidden;
+	}
+	}
+
+@media screen and (max-width:768px){
+	.header	{
+		margin-bottom: 16px;
+	}
+	.header__body{
+		height: 50px;
+	}
+	.header__nav-item{
+		font-size: 24px;
+		transition: background 0.3s, transform 0.3s;
+	}
+	.header__nav-item :hover{
+	color:#ff7300;
+	transform: scale(1.02);
+	transition: color 0.175s;
+}
+	.header__nav{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color:#aaaaaa;
+		overflow: auto;
+		padding: 70px 20px;
+		transition: 0.3s ease 0s;
+	}
+	.header__nav.active{
+		top: 0;
+	}
+	
+	.header__burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+	}
+	.header__burger span{
+		position: absolute;
+		background-color: #fff;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: 0.3s ease 0s;
+	}
+	.header__burger:before, .header__burger:after{
+		content: "";
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: 0.3s ease 0s;	
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__nav-list{
+		display: block;
+}
+.header__nav-item{
+	margin-bottom: 20px;
+}
+.header__burger.active span{
+	transform: scale(0);
+}
+.header__burger.active:before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header__burger.active:after{
+	transform: rotate(-45deg);
+	bottom: 9px;
+	}
 }

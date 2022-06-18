@@ -6,6 +6,7 @@
 	color: #fff;
 	font-weight: 600;
 	display: inline-block;
+	transition: background 0.3s, transform 0.3s;
 }
 .btn.btn_small{
 	padding: 12px 20px;
@@ -14,5 +15,12 @@
 	color: #fff;
 	font-weight: 600;
 	display: inline-block;
-	border-radius: 15px
+	border-radius: 15px;
+	transition: background 0.3s, transform 0.3s;
+}
+.btn:hover{
+	background-color: #fa8d10;
+	cursor: pointer;
+	transform: scale(1.02);
+	transition: background 0.175s;
 }

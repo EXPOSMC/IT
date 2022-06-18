@@ -1,0 +1,25 @@
+.field{
+border: 1px solid #ff7300;
+border-radius: 4px;
+padding: 16px 20px;
+display: block;
+margin-bottom: 16px;
+min-width: 300px;
+font-size: 16px;
+font-weight: 500;
+}
+.modal__title{
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.check{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%; 
+}
+.check a{
+  text-decoration: underline;
+}
+.btn__form{
+  margin-bottom: 32px;
+}
