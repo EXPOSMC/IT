@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header wrapper">
+    <header class="header ">
+        <div class = "container">
+            <div class = "header__body">
         <a href="/" class="header__logo">
             <img src="img/logo.svg" alt="Логотип IT-лагеря РКСИ">
         </a>
+                <div class = "header__burger">
+                    <span></span>
+                </div>
         <nav class="header__nav">
+            
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#">О лагере</a> </li>
                 <li class="header__nav-item"><a href="#">Смены</a> </li>
@@ -25,22 +33,29 @@
                 <li class="header__nav-item"><a href="#">Новости </a></li>
             </ul>
         </nav>
-        <a href="#" class="header__logo-list">
+        
+        <!-- <div  class ="header__logo-list"> 
+        <a href="#" >
             <img src="img/telegram.svg" alt="Иконка Telegram">
         </a>
-        <a href="#" class="header__logo-list">
+        <a href="#" >
             <img src="img/whatsapp.svg" alt="Иконка Whatsapp">
         </a>
+        </div> -->
+     </div>
+    </div>  
     </header>
     <div class="hero">
-        <img class="hero__img" src="img/hero__img.jpg" alt="IT-Фабрика компьютерных гениев" align = "right">
+        <!-- <img class="hero__img" src="img/hero__img.jpg" alt="IT-Фабрика компьютерных гениев" align = "right">  -->
         <div class="hero wrapper">
             <h1 class="hero__title">IT-Фабрика компьютерных гениев</h1>
             <p class="hero__desc">Погружение в мир информационных технологий в летнем мини-лагере.</p>
-            <a href="" class="btn">Записаться</a>
+            <div class = "form">
+            <button data-fancybox href="#modal-form" class="btn" type="button">Записаться</button>
+            </div>
         </div>
-        <section class="about wrapper">
-            <img class="about__img" src="img/about__img.jpg" alt="О проекте">
+         <section class="about wrapper">
+            <!-- <img class="about__img" src="img/about__img.jpg" alt="О проекте"> -->
             <div class="about_text">
                 <span class="about__subtitle">О проекте</span>
                 <h2 class="h2 about__title">IT-Фабрика – это летний круглосуточный мини-лагерь будущих программистов.</h2>
@@ -48,23 +63,29 @@
                 <a href="#" class="link link_big">Подробнее</a>
             </div>
         </section>
-        <section class="area wrapper">
+        <section class="area wrapper"> 
             <h2 class="h2 area__title">Направления обучения</h2>
             <div class="consist">
                 <article class="consist__item">
+                     <!-- <div class="robo__back">
+                     </div>  -->
                     <h3 class="h3 consist__title">Робототехника</h3>
                     <p class="consist__desc">9-13 лет</p>
                     <a href="#" class="link link_light">Подробнее</a>
+                     <!-- <img class="shift__img" src="img/rob1.jpg" alt="">   -->
                 </article>
                 <article class="consist__item">
                     <h3 class="h3 consist__title">Веб-дизайн и разработка</h3>
                     <p class="consist__desc">14-17 лет</p>
                     <a href="#" class="link link_light">Подробнее</a>
+                    <!-- <div class="robo__back">  
+                          <img class="shift__img" src="img/laptop.jpg" alt="">  
+                     </div>-->  
                 </article>
             </div>
         </section>
 
-        <section class="give wrapper">
+        <section class="give wrapper"> 
             <h2 class="h2 give__title">В IT-Фабрике можно:</h2>
             <div class="option">
                 <article class="option__items">
@@ -73,12 +94,12 @@
                         <h3 class="h3 option__title">Провести каникулы с&nbsp;пользой</h3>
                 </article>
                 <article class="option__items">
-                    <img class="option__img" src="img/advantage.jpg" alt="Приобрести и развить навыки программирования">
+                    <img class="option__img" src="img/advantage2.jpg" alt="Приобрести и развить навыки программирования">
                     <div class="option__content">
                         <h3 class="h3 option__title">Приобрести и&nbsp;развить навыки программирования</h3>
                 </article>
                 <article class="option__items">
-                    <img class="option__img" src="img/advantage.jpg" alt="Погрузиться в профессиональную IT-среду">
+                    <img class="option__img" src="img/advantage3.jpg" alt="Погрузиться в профессиональную IT-среду">
                     <div class="option__content">
                         <h3 class="h3 option__title">Погрузиться в&nbsp;профессиональную IT-&nbsp;среду</h3>
                 </article>
@@ -88,18 +109,18 @@
                         <h3 class="h3 option__title">Приобрести новых друзей</h3>
                 </article>
                 <article class="option__items">
-                    <img class="option__img" src="img/advantage.jpg" alt="Воплотить в жизнь творческие проекты">
+                    <img class="option__img" src="img/advantage2.jpg" alt="Воплотить в жизнь творческие проекты">
                     <div class="option__content">
                         <h3 class="h3 option__title">Воплотить в жизнь творческие проекты</h3>
                 </article>
                 <article class="option__items">
-                    <img class="option__img" src="img/advantage.jpg" alt="Побывать на интересных мастер-классах">
+                    <img class="option__img" src="img/advantage3.jpg" alt="Побывать на интересных мастер-классах">
                     <div class="option__content">
                         <h3 class="h3 option__title">Побывать на&nbsp;интересных мастер-классах</h3>
                 </article>
             </div>
         </section>
-		<section class = "photo wrapper">
+		<section class = "photo wrapper"> 
 <div class = "photo__header">
 <h2 class = "h2">Фотоотчеты</h2>
 <a href ="#" class = "link">Смотреть все</a>
@@ -160,7 +181,7 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    
     <script>
       var swiper = new Swiper(".slaider-works", {
         slidesPerView: 2,
@@ -175,13 +196,13 @@
       });
     </script>
 
-<section class="waiting wrapper">
+  <section class="waiting wrapper"> 
   <h2 class="h2 expect__header">Что ждет участников?</h2>
   <div class="expect">
       <article class="expect__items">
           <div class="expect__content">
             <h3 class="h3 expect__title">48 часов путешествия по лабиринту программирования</h3>
-            <p class = "excect__text">Учиться программированию — легко и интересно! В нашей IT-Фабрике нет отстающих и неуспевающих, каждый из нас в чем-то талантлив. И важно, чтобы ты понял «Я хочу и могу стать программистом!». В течение недели по 6 часов в день мы будем вырабатывать навыки программирования под руководством ведущих разработчиков и грамотных педагогов, а в конце смены каждый ученик выполнит маленький проект и получит сертификат. Лучшие получат конкретную производственную задачу и после её выполнения&nbsp;— первую зарплату!</p>
+            <p class = "expect__text">Учиться программированию — легко и интересно! В нашей IT-Фабрике нет отстающих и неуспевающих, каждый из нас в чем-то талантлив. И важно, чтобы ты понял «Я хочу и могу стать программистом!». В течение недели по 6 часов в день мы будем вырабатывать навыки программирования под руководством ведущих разработчиков и грамотных педагогов, а в конце смены каждый ученик выполнит маленький проект и получит сертификат. Лучшие получат конкретную производственную задачу и после её выполнения&nbsp;— первую зарплату!</p>
       </article>
       <article class="expect__items">
         <img class="expect__img" src="img/waiting__img.jpg" alt="Провести каникулы с пользой">
@@ -194,12 +215,12 @@
       <article class="expect__items">
           <div class="expect__content">
             <h3 class="h3 expect__title">Cпортивно-развлекательная программа</h3>
-            <p class = "excect__text">Игры на открытом воздухе: бадминтон, волейбол, футбол, купание в бассейне, интерактивные развлекательные программы (квесты, конкурсы, командные игры, развитие творческих навыков и многое другое), настольные игры и фото на память.</p>
+            <p class = "expect__text">Игры на открытом воздухе: бадминтон, волейбол, футбол, купание в бассейне, интерактивные развлекательные программы (квесты, конкурсы, командные игры, развитие творческих навыков и многое другое), настольные игры и фото на память.</p>
       </article>
       <article class="expect__items">
           <div class="expect__content">
             <h3 class="h3 expect__title">Дополнительное развитие навыков</h3>
-            <p class = "excect__text">Программа IT-Фабрики предусматривает развитие у резидентов компетенций будущего, требующих нестандартного, творческого подхода. На проекте, при помощи тренингов личностного роста и досуговых мероприятий, ты разовьёшь свои надпрофессиональные навыки (soft-skills) — залог успешного будущего: креативное мышление, адаптивность, тягу к самообразованию, лидерские качества, коммуникативные и командные навыки.</p>
+            <p class = "expect__text">Программа IT-Фабрики предусматривает развитие у резидентов компетенций будущего, требующих нестандартного, творческого подхода. На проекте, при помощи тренингов личностного роста и досуговых мероприятий, ты разовьёшь свои надпрофессиональные навыки (soft-skills) — залог успешного будущего: креативное мышление, адаптивность, тягу к самообразованию, лидерские качества, коммуникативные и командные навыки.</p>
       </article>
       <article class="expect__items">
         <img class="expect__img" src="img/waiting__img.jpg" alt="Провести каникулы с пользой">
@@ -209,7 +230,7 @@
       
   </div>
 </section>
-<section class = "comment wrapper">
+<section class = "comment wrapper"> 
   <div class = "comment__header">
   <h2 class = "h2">Отзывы</h2>
   <a href ="#" class = "link">Смотреть все</a>
@@ -229,46 +250,56 @@
       </article>
   </section>
 
-  <section class = "change wrapper">
+  <section class = "change wrapper"> 
     <div class = "change__header">
     <h2 class = "h2">Ближайшие смены</h2>
     <a href ="#" class = "link">Смотреть все</a>
 	</div>
-	<div class="shift">
-                <div class="shift__item">
-				
-					</div>
-                <div class="shift__item">
-                  
-                </div>
-				<div class="shift__item">
-                  
-                </div>
-    </div>
-    <div class="shift_text">
-				<div>
-                <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
-				<h2 class="h2 shift__title">Смена №3. Робототехника</h2>
-				<a href="" class="btn btn_small">Записаться</a>					
-				</div>
-				<div>
-                <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
-				<h2 class="h2 shift__title">Смена №3. Робототехника</h2>	
-				<a href="" class="btn btn_small">Записаться</a>					
-				</div>
-				<div>
-                <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
-				<h2 class="h2 shift__title">Смена №3. Робототехника</h2>
-				<a href="" class="btn btn_small">Записаться</a>				
-				</div>
-	<div>
+    <div class = "shift">
+                <article class="shift__item">
+                    <div class = shift__content>
+                       
+                        <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                        <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                        <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>					
+                    </article>
+                    <article class="shift__item">
+                        <div class = shift__content>
+                            <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                            <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                            <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>				
+                        </article>
+                        <article class="shift__item">
+                            <div class = shift__content>
+                                <span class="shift__subtitle">01.08.2022 – 08.08.2022</span>
+                                <h2 class="h2 shift__title">Смена №3. Робототехника</h2>
+                                <button data-fancybox href="#modal-form" class="btn btn_small" type="button">Записаться</button>				
+                            </article>
+                            <!-- <a data-fancybox data-type="iframe" href="iframe1.html"data-preload="false"class="btn btn_small">Записаться</a>	 -->
     </section>
-    
+     <div class="modal-form form" id="modal-form" style="display: none">
+        <form class="modal-form__item" action="" method="post">
+        <div class="modal__title">Заполните данные для записи в IT-лагерь</div>
+        <input class="field" name="Имя" type="text" placeholder="Ваше имя" data-validate-field="name" />
+        <input class="field" name="Телефон" type="tel" placeholder="Ваш телефон" data-validate-field="tel" />
+        <input class="field" name="Смена" type="text" placeholder="Смена" data-validate-field="change" />
+        <input class="field" name="Направления" type="text" placeholder="Выберите направление" data-validate-field="consist"/>
+        <button class="btn btn__form" type = "submit">Отправить</button>
+        <div class="check__inner">
+        <input class = "checkbox" type="checkbox" id="modal-check" name="check" />
+        <label for="modal-check" class="check">Нажимая на кнопку, Вы даёте согласие на <a href = "#">обработку персональных
+        данных и соглашаетесь c политикой конфиденциальности</a></label>
+        </div>
+        </form>
+    </div>
         <footer class="footer">
             <div class="wrapper footer__content">
                 <a href="#">Полтика обработки персональных данных</a>
-                <p>© 2022 IT-лагерь РКСИ</p>
-                <p>Сайт разработал Хрхрян Георгий</p>
+                <p class = "footer__text">© 2022 IT-лагерь РКСИ</p>
+                <p class = "footer__text">Сайт разработал Хрхрян Георгий</p>
 			</div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src = "js/menu.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
